@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hotel Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-bg" onload="loadDetails()">
+
+<div class="details-card">
+
+  <h2 id="hotelName"></h2>
+  <p id="hotelInfo" style="opacity: 0.8;"></p>
+
+  <div class="image-section">
+    <button class="nav-btn" onclick="prevImage()">◀</button>
+
+    <img id="carousel" alt="Hotel image">
+
+    <button class="nav-btn" onclick="nextImage()">▶</button>
+  </div>
+
+  <div class="details-actions">
+    <button class="primary-btn" onclick="bookNow()">Book Now</button>
+    <button class="secondary-btn" onclick="toggleFav()">♡ Add to Favorites</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
