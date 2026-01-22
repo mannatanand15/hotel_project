@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Explore Hotels</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-bg" onload="checkLogin()">
+
+<div class="nav">
+  <b>StayFinder</b>
+  <div>
+    <a href="profile.html">Profile</a>
+    <button onclick="logout()">Logout</button>
+  </div>
+</div>
+
+<div class="container">
+  <h1 class="title">Find your perfect stay</h1>
+
+  <div class="filters">
+    <input id="searchCity" placeholder="Search city">
+    
+    <select id="amenityFilter">
+      <option value="">All amenities</option>
+      <option value="wifi">WiFi</option>
+      <option value="pool">Pool</option>
+      <option value="parking">Parking</option>
+    </select>
+
+    <select id="sortSelect">
+      <option value="">Sort</option>
+      <option value="low">Price ↑</option>
+      <option value="high">Price ↓</option>
+      <option value="rating">Rating</option>
+    </select>
+
+    <button onclick="applyAllFilters()">Search</button>
+  </div>
+
+  <div id="hotelList"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
